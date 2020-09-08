@@ -3,18 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- FONT AWESOME LINK -->
-  https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
   
   <!-- CUSTOM CSS LINK -->
   <link rel="stylesheet" href="./assets/styles/style.css">
 
   <title>Tomato Timer</title>
-
 </head>
 <body>
+  <header>
+    <h1> Tomato Timer </h1>
+  </header>
+
+  <main class='container'>
+
+    <!-- Timer section -->
+    <section class="timer">
+      
+      <div id="hand"></div>
+
+      <div class="controls">
+        <!-- Status toggle bar  -->
+        <label for="status-toggle" class="switch">
+          <input id="status-toggle" type="checkbox" checked name="status-toggle">
+          <span class='slider'></span>
+        </label>
+
+        <!-- Status label  -->
+        <div class="status">Status: <span id="status">Working</span></div>
+
+        <!-- Time - Minutes / Seconds  -->
+        <div class="time">
+          <div id="minutes">25</div>
+          <div id="seconds">00</div>
+        </div>
+
+        <!-- Buttons - Play/Pause/Stop -->
+        <div class="buttons">
+          <div id="play" aria-label='play'><i class="fa fa-play" aria-hidden="true"></i></div>
+          <div id="pause"><i class="fa fa-pause"></i></div>
+          <div id="stop"><i class="fa fa-stop"></i></div>
+        </div>
+      </div>
+
+    </section> <!-- Timer wrapper ends-->
+    
+    <!--  -->
+    <section class="inputs">
+
+
+    </section>
+    
   
+  </main>
+
+  <footer>
+
+  </footer>
 
   <script src='./assets/scripts/main.js'></script>
 </body>
