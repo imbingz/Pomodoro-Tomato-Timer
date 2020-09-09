@@ -35,7 +35,8 @@ h1 {
 
 input {
 	border: none;
-	border-bottom: 5px solid tomato;
+  border-bottom: 5px solid tomato;
+  outline: none;
 	font-size: 1.2rem;
 	color: tomato;
 	width: 100%;
