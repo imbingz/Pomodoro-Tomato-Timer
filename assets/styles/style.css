@@ -1,5 +1,5 @@
 /* colors: #fdfdfd; #f5f4f4; #ccc;
-tomato; 
+tomato; #67ab09;
 */
 
 /* Import Google Font */
@@ -47,7 +47,7 @@ label {
 
 /* Status Toggle Bar Starts Here */
 
-/* Toggle Container  */
+/* Toggle Container - label tag that holds input:checked */
 .switch {
 	position: relative;
 	display: inline-block;
@@ -94,14 +94,85 @@ input:checked + .slider {
 	background-color: tomato;
 }
 
+/* Move the slider bar when input is checked */
 input:checked + .slider:before {
 	transform: translateX(13px);
 }
 
+/* Slider toggle bar ends here  */
+
+/* Timer section stars here */
+
+/* The main container that holds all */
+.container {
+	padding: 20px;
+	max-width: 400px;
+	margin: 0 auto;
+	color: tomato;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Make the timer div round */
+.timer {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	background-color: tomato;
+	border-radius: 50%;
+	position: relative;
+}
+
+/* Insert the timer ring - 10px width */
+.timer:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 290px;
+	width: 290px;
+	background-color: #fdfdfd;
+	border-radius: 50%;
+}
+
+/* Cute timer top handle  */
+#hand {
+	position: absolute;
+	height: 300px;
+	width: 20px;
+	left: 140px;
+transition: 1s all linear; */
+}
+
+/* Green handle bar */
+#hand::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #67ab09;
+	top: -19.175px;
+	border-radius: 50%;
+}
+
+/* tomato round base */
+#hand::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: -10px;
+  background-color: tomato;
+  border-radius: 50%;
+}
 /* Fixed Footer  */
 main {
 	flex: 1 0 auto;
 }
+
 
 .copyright {
 	color: #888;
